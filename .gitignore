@@ -1,0 +1,22 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain-types
+typechain
+contracts-exposed
+
+#Hardhat files
+cache
+artifacts
+
+yarn-error.log
+
+.openzeppelin/
+subgraph/build
+subgraph/generated
+subgraph/subgraph.yaml
+
+.DS_Store
+
+subgraph/graph-node/

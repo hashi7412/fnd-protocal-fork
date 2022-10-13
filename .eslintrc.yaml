@@ -1,0 +1,26 @@
+extends:
+  - plugin:@typescript-eslint/eslint-recommended
+parser: "@typescript-eslint/parser"
+parserOptions:
+  project: tsconfig.json
+plugins:
+  - "@typescript-eslint"
+  - "no-only-tests"
+  - "simple-import-sort"
+  - "unused-imports"
+root: true
+rules:
+  "@typescript-eslint/no-floating-promises": "error"
+  "@typescript-eslint/no-unused-vars": "off" # Replaced by the unused-imports plugin
+  "unused-imports/no-unused-imports": "warn"
+  "unused-imports/no-unused-vars": "warn"
+  "no-only-tests/no-only-tests": "warn"
+  "simple-import-sort/imports": "warn"
+  "simple-import-sort/exports": "warn"
+overrides:
+  - files: subgraph/**/*.ts
+    rules:
+      prefer-const: 0
+      "@typescript-eslint/ban-types": 0
+      "unused-imports/no-unused-vars": 0
+

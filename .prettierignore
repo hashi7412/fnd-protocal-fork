@@ -1,0 +1,20 @@
+# folders
+artifacts/
+build/
+cache/
+coverage/
+dist/
+docs/
+lib/
+node_modules/
+src/typechain/
+subgraph/build/
+subgraph/generated/
+subgraph/graph-node/
+versions/
+.vscode/
+deployments/
+contracts-exposed/
+
+# files
+coverage.json
